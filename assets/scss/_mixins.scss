@@ -1,0 +1,12 @@
+// @mixin flex-box {
+//     display: flex;
+//     align-items: center;
+// }
+
+@mixin flex-box($justifyContent, $alignItems) {
+    display: flex;
+    @if($justifyContent != none and $alignItems != none){
+        justify-content: $justifyContent;
+        align-items: $alignItems;
+    }
+}
